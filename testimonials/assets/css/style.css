@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg: #F5F7FF;
+    --secondary-bg: #FFF;
+    --primary-color: #000;
+}
+
+/* ======Fonts====== */
+.message, .client-profession {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading, .name-info > h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* =================== */
+
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25vh 0;
+}
+
+#testimonials {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid black; */
+}
+
+.heading {
+    font-size: 24px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+
+/* ==================card==================== */
+
+/* upper part of the card */
+.message {
+    text-align: left;
+    line-height: 24px;
+    /* border: 1px solid green; */
+}
+
+
+/* bottom part of the card */
+.client-info {
+    position: relative;
+    /* border: 1px solid gray; */
+    height: 100px;
+}
+
+.fixed-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+}
+
+
+.img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* name and profession in the bottom part */
+.name-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.client-profession {
+    font-size: 12px;
+}
+
+button {
+    background-color: var(--primary-bg);
+    border: none;
+    border-radius: 20px;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 40px;
+    color: #D2D8EF;
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+}
+
+button:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    background-color: #FFF;
+    color: var(--primary-color);
+    box-shadow: 1px 1px 2px black;
+}
+
+
+.dot {
+    font-size: 30px;
+    color: #81848f;
+}
+
+/* ================================== */
+
+
+
+
+
+
+/* =============utility classes============= */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* not used */
+.box-shadow {
+    box-shadow: 1px 1px 1px black;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    height: 250px;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .carousel {
+        flex-direction: column;
+    }
+}
+
+
