@@ -3,10 +3,10 @@ Collection of challenges that I solved on iCodeThis
 
 # Challenge links:
 
-## Testimonials: [https://icodethis.com/submissions/237](icodethis.com/submissions/237) 
+## Testimonials: [icodethis.com/submissions/237](https://icodethis.com/submissions/237) 
 
-## Sign Up: [https://icodethis.com/submissions/250](icodethis.com/submissions/250) 
+## Sign Up: [icodethis.com/submissions/250](https://icodethis.com/submissions/250) 
 
-## Profile Header [https://icodethis.com/submissions/265](icodethis.com/submissions/265)
+## Profile Header [icodethis.com/submissions/265](https://icodethis.com/submissions/265)
 
-## Collections List [https://icodethis.com/submissions/282](icodethis.com/submissions/282)
+## Collections List [icodethis.com/submissions/282](https://icodethis.com/submissions/282)
