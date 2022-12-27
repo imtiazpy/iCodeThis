@@ -7,19 +7,24 @@
 body {
     background-color: #F5F6FF;
     color: #230045;
-    position: relative;
 }
 
 .container {
-    margin: 25vh 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .pricing-table {
     width: 80vw;
-    height: 50vh;
     background-color: #FFF;
     border-radius: 20px;
     padding: 14px;
+    z-index: 1;
+    opacity: 0.8;
 }
 
 .card-wrapper {
@@ -38,6 +43,13 @@ body {
     justify-content: space-between;
     gap: 20px;
     padding-right: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.price-card:hover {
+    box-shadow: 1px 1px 5px #46dddb;
+    transform: scale(1.1);
 }
 
 p, .btn {
@@ -74,6 +86,17 @@ p, .btn {
     border-radius: 5px;
     font-size: 12px;
     color: #000;
+    background: linear-gradient(#230045 0 0) no-repeat;
+    background-size: 200% 0.1rem;
+    background-position: 200% 100%;
+    transition: background-size .4s, background-position .4s .4s;
+}
+
+.btn:hover {
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    transition: background-size .4s .4s, background-position .4s;
+    color: #fff;
 }
 
 .btn-free {
@@ -91,32 +114,44 @@ p, .btn {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #B3FFFF;
-    top: 50;
-    left: 100;
+    border-radius: 50%;
+    box-shadow: 200px 0 100px #B3FFFF;
+    top: 120px;
+    left: 200px;
+}
+
+.pink-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 200px 0 70px #FAF1E5;
+    top: 100px;
+    right: 350px;
+}
+
+.pink-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 200px 0 70px #FAF1E5;
+
+    bottom: 100px;
+    left: 40px;
 }
 
 
 
 /* ==================================responsiveness================ */
 
-@media screen and (max-width: 900px) {
-    .container {
-        margin: 25vh 8vw;
-    }
-    .pricing-table {
-        width: 84vw;
-    }
-}
-
 
 @media screen and (max-width: 700px) {
     .container {
-        margin: auto 5vw;
+        height: auto;
     }
     .pricing-table {
         width: 90vw;
-        height: 100vh;
     }
     .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -130,11 +165,7 @@ p, .btn {
 
 @media screen and (max-width: 500px) {
     .container {
-        margin: auto 0;
-    }
-    .pricing-table {
-        width: 100vw;
-        height: 100vh;
+        height: auto;
     }
     .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
