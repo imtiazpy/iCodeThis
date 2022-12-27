@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F6FF;
+    color: #230045;
+    position: relative;
+}
+
+.container {
+    margin: 25vh 10vw;
+}
+
+.pricing-table {
+    width: 80vw;
+    height: 50vh;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 14px;
+}
+
+.card-wrapper {
+    background: linear-gradient(45deg, #FFF0FF, #F5FDFF, #FFF7E9 );
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.price-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+p, .btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tier {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price > span {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.offer > p:not(.price) {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.detail {
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #000;
+}
+
+.btn-free {
+    background-color: #FF84FF;
+}
+.btn-standard {
+    background-color: #89FAF9;
+}
+.btn-premium {
+    background-color: #89FAF9;
+}
+
+
+.green-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #B3FFFF;
+    top: 50;
+    left: 100;
+}
+
+
+
+/* ==================================responsiveness================ */
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin: 25vh 8vw;
+    }
+    .pricing-table {
+        width: 84vw;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        margin: auto 5vw;
+    }
+    .pricing-table {
+        width: 90vw;
+        height: 100vh;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .price-card {
+        box-shadow: 1px 1px 5px black;
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: auto 0;
+    }
+    .pricing-table {
+        width: 100vw;
+        height: 100vh;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .price-card {
+        box-shadow: 1px 1px 5px black;
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
