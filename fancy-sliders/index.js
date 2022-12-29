@@ -12,3 +12,10 @@ for (let index = 0; index < 5; index++) {
         vertical_bar_container.appendChild(element)
     })
 }
+
+
+
+addEventListener('input', e => {
+    let _t = e.target;
+    _t.parentNode.style.setProperty(`--${_t.id}`, +_t.value);
+  }, false);
