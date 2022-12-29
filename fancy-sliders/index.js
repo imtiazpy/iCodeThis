@@ -18,4 +18,5 @@ for (let index = 0; index < 5; index++) {
 addEventListener('input', e => {
     let _t = e.target;
     _t.parentNode.style.setProperty(`--${_t.id}`, +_t.value);
+    console.log(_t.value)
   }, false);
