@@ -14,3 +14,5 @@ Collection of challenges that I solved on iCodeThis
 ## Pricing Table [icodethis.com/submissions/326](https://www.icodethis.com/submissions/326)
 
 ## Big Footer [icodethis.com/submissions/375](https://icodethis.com/submissions/375)
+
+## Job List [icodethis.com/submissions](https://icodethis.com/submissions/417)

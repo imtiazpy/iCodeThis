@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F4FF;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.job-section {
+    width: 65vw;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 50px;
+    gap: 20px;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.job:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(97, 96, 96);
+}
+
+.title {
+    font-weight: 600;
+}
+
+.location {
+    width: 15px;
+    height: 15px;
+}
+.job div:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.job .arrow {
+    transition: all 0.5s ease;
+}
+
+.job .arrow:hover {
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .job {
+        grid-template-columns: 1fr;
+    }
+}
