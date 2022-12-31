@@ -16,3 +16,5 @@ Collection of challenges that I solved on iCodeThis
 ## Big Footer [icodethis.com/submissions/375](https://icodethis.com/submissions/375)
 
 ## Job List [icodethis.com/submissions](https://icodethis.com/submissions/417)
+
+## Statistics Chart [icodethis.com/submissions/425](https://www.icodethis.com/submissions/425)
