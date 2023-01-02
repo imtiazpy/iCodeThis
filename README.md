@@ -20,3 +20,5 @@ Collection of challenges that I solved on iCodeThis
 ## Statistics Chart [icodethis.com/submissions/425](https://www.icodethis.com/submissions/425)
 
 ## Password Field [icodethis.com/submissions/463](https://www.icodethis.com/submissions/463)
+
+## Article Page [icodethis.com/submissions/486](https://www.icodethis.com/submissions/486)

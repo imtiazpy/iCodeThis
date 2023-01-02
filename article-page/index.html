@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/95f6b66db7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="wrapper">
             <div class="header">
+                <!-- <label class="hamburger-lable" for="hamburger"><i class="fas fa-hamburger"></i></label>
+                <input type="checkbox" name="" id="hamburger"> -->
                 <nav>
                     <div>
                         <a href="">Product</a>
@@ -34,6 +38,38 @@
                     <button>Log In</button>
                     <button class="btn-color">Get started</button>
                 </div>
+
+
+                <!-- hamburger -->
+
+                <label class="responsive-menu">
+                    <input type="checkbox">
+                    <span class="menu"> <span class="hamburger"></span> </span>
+                    <ul>
+                        <li> 
+                            <a href="#">Product</a> 
+                            <i class="fas fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li> 
+                            <a href="#">Pricing</a> 
+                        </li>
+                        <li> 
+                            <a href="#">Use Cases</a>
+                            <i class="fas fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Project</a>
+                        </li>
+                        <li><a href="">Remote</a></li>
+                        <li><a href="">Teamwork</a></li>
+                        <li><a href="">Productivity</a></li>
+                        <li><a href="">Marketing</a></li>
+                    </ul>
+                </label>
+
             </div>
             <main>
 
@@ -41,11 +77,11 @@
                     <nav class="inner-nav">
                         <a href="">Project</a>
                         <a href="">Remote</a>
-                        <a href="Teamwork"></a>
+                        <a href="">Teamwork</a>
                         <a href="">Productivity</a>
                         <a href="">Marketing</a>
                     </nav>
-                    <div>
+                    <div class="expand-field">
                         <input type="text" name="search" id="search">
                         <span class="search-icon"><i class="fas fa-search"></i></span>
                     </div>
@@ -56,45 +92,55 @@
                     <h1>Productivity</h1>
                     <div class="article-section">
                         <article>
-                            <img class="article-cover" src="https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="">
-    
+                            <img class="article-cover"
+                                src="https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
+                                alt="">
+
                             <h3>Little Things Do Make a Difference</h3>
                             <p>
-                                Why do you want to motivate yourself? Actually, just answering that question fully can be one of the better ways to get your daily motivation.
+                                Why do you want to motivate yourself? Actually, just answering that question fully can
+                                be one of the better ways to get your daily motivation.
                             </p>
                             <div class="author">
-                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=100&q=80" alt="">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=100&q=80"
+                                    alt="">
                                 <p>Kathryn Shelton</p>
                             </div>
                         </article>
                         <div class="articles">
                             <h3>Recent articles</h3>
                             <div class="item">
-                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnVpbGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=100&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnVpbGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=100&q=60"
+                                    alt="">
                                 <div>
                                     <h4>Common Symbols And Their Meanings</h4>
                                     <div class="author">
-                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=60&q=60" alt="">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=60&q=60"
+                                            alt="">
                                         <p>Susie Russel</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=100&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=100&q=60"
+                                    alt="">
                                 <div>
                                     <h4>Success Steps For Your Business</h4>
                                     <div class="author">
-                                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=60&q=60" alt="">
+                                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=60&q=60"
+                                            alt="">
                                         <p>Cannar Parsons</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=100&q=60" alt="">
+                                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=100&q=60"
+                                    alt="">
                                 <div>
                                     <h4>The Strength Of Your Belief</h4>
                                     <div class="author">
-                                        <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=60&q=60" alt="">
+                                        <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=60&q=60"
+                                            alt="">
                                         <p>Jonathan Yates</p>
                                     </div>
                                 </div>
@@ -102,7 +148,7 @@
                         </div>
                     </div>
                 </section>
-                
+
             </main>
         </div>
     </div>
@@ -110,4 +156,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
