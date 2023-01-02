@@ -7,15 +7,18 @@
     <title>Password Field</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/95f6b66db7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="password-form">
-            <h2>Enter your password</h2>
+            
             <form action="" method="post">
-                <div class="acount">
+                <h2>Enter your password</h2>
+                <div class="account">
                     <div class="img">
-                        <img src="" alt="">
+                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="" width="50" height="50">
                     </div>
                     <div class="info">
                         <p>Business account</p>
@@ -24,28 +27,36 @@
                 </div>
                 <div class="password-field">
                     <div>
-                        <p class="label">Password</p>
-                        <input type="password" name="password" id="password">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <i class="fas fa-solid fa-lock lock"></i>
                     </div>
-                    <span class="eye"></span>
+                    <span class="eye">
+                        <i class="fas fa-regular fa-eye"></i>
+                    </span>
                 </div>
-                <div>
-                    <div class="toggle">
+                <div class="buttons">
+                    <div class="toggle-btn">
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
-                        <p>Stay signed in</p>
+                        <label>Stay signed in</label>
                     </div>
                     <div class="continue-btn">
                         <button type="submit">Continue</button>
                     </div>
                 </div>
+
+                <div class="reset">
+                    <a href="">Reset password</a>
+                </div>
             </form>
-            <div class="reset">
-                <a href="">Reset password</a>
-            </div>
+            
         </div>
     </div>
+
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F6F7F8;
+    background-color: #dbdddf;
     color: #0B0C45;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -17,3 +17,150 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.password-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgb(163, 161, 161);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img img {
+    border-radius: 50%;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.password-field div:nth-child(1) label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.password-field div:nth-child(1) {
+    flex-grow: 1;
+    position: relative;
+}
+
+.lock {
+    position: absolute;
+    top: 34px;
+    left: 10px;
+}
+
+#password {
+    padding: 10px;
+    padding-left: 34px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(156, 153, 153);
+}
+.eye {
+    margin-top: 20px;
+}
+.eye:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn label:not(.switch) {
+    font-size: 12px;
+}
+
+.continue-btn button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0B0C45;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.reset a {
+    color: #0B0C45;
+}
+
+
+/* ========slider switch====== */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #0B0C45;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #0B0C45;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+    
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #fff;
+  }
+
+  input:checked + .slider {
+    background-color: #0B0C45;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
