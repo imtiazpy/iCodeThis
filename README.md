@@ -22,3 +22,5 @@ Collection of challenges that I solved on iCodeThis
 ## Password Field [icodethis.com/submissions/463](https://www.icodethis.com/submissions/463)
 
 ## Article Page [icodethis.com/submissions/486](https://www.icodethis.com/submissions/486)
+
+## Blog Cards [icodethis.com/submissions/513](https://www.icodethis.com/submissions/513)
