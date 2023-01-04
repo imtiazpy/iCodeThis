@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog cards two</title>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/95f6b66db7.js" crossorigin="anonymous"></script>
+
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+
+</head>
+
+<body class="bg-[#F7F7FC]">
+
+    <div class="card-wrapper grid grid-cols-1 gap-6 px-10 sm:px-40 md:px-48 md:py-10">
+        <!-- Card one starts -->
+        <div class="card rounded-lg md:w-[360px] bg-white mx-auto hover:cursor-pointer drop-shadow-lg">
+            <div class="content p-4 flex flex-col gap-2">
+                <div class="timeline flex flex-col sm:flex-row sm:gap-4 text-sm text-[#81839D]">
+                    <p>December 17 2022</p>
+                    <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                        class="block hover:cursor-pointer">
+                        2 comments
+                    </p>
+                </div>
+                <div class="title text-lg font-medium leading-tight">
+                    <h1>Why is the Tesla Cybertruck designed the way it is?</h1>
+                </div>
+                <div class="author font-light text-sm">
+                    <p>By <span class="text-[#5942D6] hover:cursor-pointer">Lewis Daniels</span></p>
+                </div>
+            </div>
+            <div class="cover">
+                <img class="rounded-b-lg object-cover" src="https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg" alt="">
+            </div>
+        </div>
+        <!-- Card One Ends -->
+
+        <!-- Card two and three in the same row -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- second card -->
+            <div class="card md:col-span-2 rounded-lg bg-white hover:cursor-pointer">
+                <div class="cover relative">
+                    <img class="rounded-t-lg h-40 w-full object-cover"
+                        src="https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="">
+                    <div
+                        class="tag absolute top-4 right-4 uppercase rounded-full text-sm text-black bg-[#D6C7D6] px-2 hover:cursor-pointer hover:bg-[#38598B] transition ease-in-out duration-500">
+                        Popular</div>
+                </div>
+                <div class="content p-4">
+                    <h2 class="title text-lg font-medium leading-tight mb-2">How to keep going when you don't know
+                        what's next</h2>
+                    <p class="text-sm font-light">
+                        B-Believe in yourself, and in what you can do. Believe in your possibilities and your dreams.
+                        Every advancement of humankind has taken place because someone believed in themselves.
+                    </p>
+                </div>
+                <div class="author flex gap-2 items-center px-4 pb-4">
+                    <img class="h-10 w-10 rounded-full"
+                        src="https://i.ibb.co/s1q8Tcj/282104899-5018985494866303-1187458676772655267-n.jpg" alt="">
+                    <div class="user">
+                        <h6 class="font-bold">Imtiaz Ahmed</h6>
+                        <p class="text-sm text-[#A2A6B3]">Yesterday</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second card ends -->
+            <div class="card bg-white rounded-lg h-fit w-full sm:w-fit hover:cursor-pointer">
+                <div class="cover relative">
+                    <img class="rounded-t-lg h-32 w-full object-cover"
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+                        alt="">
+                    <div
+                        class="tag absolute top-4 left-4 uppercase rounded-full text-sm text-white bg-[#D6C7D6] px-2 hover:cursor-pointer hover:bg-[#38598B] transition ease-in-out duration-500">
+                        Design</div>
+                </div>
+                <div class="px-4 pt-4">
+                    <h2 class="title text-lg font-medium leading-tight mb-2">10 Rules of Dashboard Design</h2>
+                </div>
+                <div class="author font-light text-sm px-4">
+                    <p>By <span class="text-[#5942D6] hover:cursor-pointer">Lewis Daniels</span></p>
+                </div>
+                <div class="px-4 my-4">
+                    <hr>
+                    <div class="timeline flex flex-col sm:flex-row sm:gap-4 text-sm text-[#81839D] mt-4">
+                        <p>January 01 2023</p>
+                        <p data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                            class="block hover:cursor-pointer">
+                            2 comments
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="flex flex-col gap-4">
+        <div id="popup-modal" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-10 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-md md:h-auto">
+                <div class="relative bg-white rounded-lg shadow">
+                    <button type="button"
+                        class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800"
+                        data-modal-hide="popup-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="p-4 flex flex-col gap-4">
+                        <div class="comment flex gap-4">
+                            <img class="h-10 w-10 rounded-full"
+                                src="https://i.ibb.co/s1q8Tcj/282104899-5018985494866303-1187458676772655267-n.jpg"
+                                alt="">
+                            <div>
+                                <h2 class="font-semibold text-sm mb-2">Imtiaz Ahmed <span
+                                        class="text-[#5942D6]">@imtiazpy</span></h2>
+                                <p>Tesla Cybertruck is designed to be a futuristic, rugged electric vehicle
+                                    with a unique, angular appearance.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment flex gap-4">
+                            <img class="h-10 w-10 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg"
+                                alt="">
+                            <div>
+                                <h2 class="font-semibold text-sm mb-2">Elon Musk <span
+                                        class="text-[#5942D6]">@elonmusk</span></h2>
+                                <p>You are absolutely right <span class="text-[#5942D6]">@imtiazpy</span>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="add-comment flex justify-between items-center">
+                            <input
+                                class="rounded-full px-4 py-2 border-transparent focus:border-transparent focus:ring-0 bg-gray-200 text-black"
+                                placeholder="Post your comment..." type="text" name="" id="">
+                            <button class="px-4 py-2 bg-sky-600 rounded-full text-white hover:bg-sky-500">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
