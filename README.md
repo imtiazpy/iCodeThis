@@ -24,3 +24,5 @@ Collection of challenges that I solved on iCodeThis
 ## Article Page [icodethis.com/submissions/486](https://www.icodethis.com/submissions/486)
 
 ## Blog Cards [icodethis.com/submissions/513](https://www.icodethis.com/submissions/513)
+
+## Blog Cards two [icodethis.com/submissions/552](https://www.icodethis.com/submissions/552)
