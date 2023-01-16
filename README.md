@@ -28,3 +28,5 @@ Collection of challenges that I solved on iCodeThis
 ## Blog Cards two [icodethis.com/submissions/552](https://www.icodethis.com/submissions/552)
 
 ## Pagination Two [icodethis.com/submissions/777](https://www.icodethis.com/submissions/777)
+
+## Team Page [icodethis.com/submissions/941](https://www.icodethis.com/submissions/941)

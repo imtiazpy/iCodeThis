@@ -1,6 +1,7 @@
 .card {
     transition: all 0.5s ease-in-out;
 }
+
 .card:hover {
     transform: translateX(5px);
 }
@@ -17,3 +18,54 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
